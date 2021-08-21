@@ -1,0 +1,27 @@
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  vertical-align: middle;
+}
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+ol,
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+.fab,
+.fas,
+.material-icons,
+.material-icons-outlined {
+  display: inline-block;
+  font-size: 24px;
+  line-height: inherit;
+  vertical-align: middle;
+  transform: translateY(-0.1em);
+}

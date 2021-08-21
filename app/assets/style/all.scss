@@ -1,11 +1,7 @@
-$color: #00cc99;
+//font
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+// Vender
+@import "./vender/bootstrap";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+// Base
+@import './base/reboot';

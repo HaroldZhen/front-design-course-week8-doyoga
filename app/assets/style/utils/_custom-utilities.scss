@@ -1,0 +1,12 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": (
+      rfs: false,
+      property: font-size,
+      responsive: true,
+      class: fs,
+      values: $font-sizes,
+    ),
+  )
+);
