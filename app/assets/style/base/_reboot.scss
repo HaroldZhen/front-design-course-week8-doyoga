@@ -1,17 +1,19 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
+  color: #707070 // $dark;
 }
 img {
   vertical-align: middle;
 }
 ol,
-ul {
-  margin-bottom: 0 !important;
+ul,
+p  {
+  margin-bottom: 0;
 }
 ol,
 ul,
-li {
+li{
   padding: 0;
   list-style: none;
 }

@@ -25,6 +25,7 @@ $spacers: (
   10: $spacer * 2.5,       // 40px
   11: $spacer * 2.75,      // 44px
   12: $spacer * 3,         // 48px
+  'sm': $spacer * 0.625 //10px
 );
 
 // Typography
@@ -67,4 +68,5 @@ $input-btn-padding-y:         0.5rem;
 $input-btn-padding-x:         1rem;
 
 // Border
+$border-radius:               .3125rem;
 $border-radius-lg:            1rem;

@@ -1,4 +1,8 @@
 .btn{
+  color: $dark;
+  &-secondary,&-secondary:hover {
+    color: $white;
+  }
   &-outline-primary:hover{
     background: $primary;
     color: $white;

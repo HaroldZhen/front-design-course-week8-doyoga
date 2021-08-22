@@ -1,0 +1,10 @@
+.bg-hero {
+  height: 560px;
+  background-image: url("../images/hero.jpeg");
+  @include media-breakpoint-up(md) {
+    height: 582px;
+  }
+}
+.bg-cover {
+  background-size: cover;
+}

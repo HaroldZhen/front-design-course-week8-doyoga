@@ -8,6 +8,18 @@ $utilities: map-merge(
       class: fs,
       values: $font-sizes,
     ),
+    "bg-position": (
+      class: bg-pos,
+      responsive: true,
+      property: background-position,
+      values: (
+        'center': center,
+        'center-bottom': center bottom,
+        'center-top': center top,
+        'center-left': center left,
+        'center-right': center right,
+      )
+    ),
     "font-weight": (
       property: font-weight,
       class: fw,
