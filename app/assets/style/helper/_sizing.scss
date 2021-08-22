@@ -1,3 +1,13 @@
 .max-h-card-body{
   max-height: 72px;
 }
+
+.w-avatar {
+  width: 48px;
+  @include media-breakpoint-up(md) {
+    width: 68px;
+    &.active{
+      width: 94px;
+    }
+  }
+}
