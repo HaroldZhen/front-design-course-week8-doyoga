@@ -1,0 +1,11 @@
+.navbar {
+  &-brand {
+    width: 96px;
+  }
+  .nav-link{
+    font-weight: $font-weight-lighter;
+    &:hover{
+      font-weight: $font-weight-normal;
+    }
+  }
+}

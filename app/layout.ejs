@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title><%- title %></title>
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+  <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
   <script>
     (function(d) {
       var config = {
@@ -23,7 +24,37 @@
 
 <body>
   <header class="header">
-    這是 header
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand" href="./index.html">
+            <img class="img-fluid" src="./assets/images/DOYOGA-logo@2x.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons-outlined text-primary fs-lg">
+              reorder
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">課程介紹</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">瑜珈空間</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">當月課表</a>
+              </li>
+          </div>
+          <div class="d-none d-lg-block">
+            <button class="btn btn-outline-primary rounded-3 me-3">立即預約</button>
+            <button class="btn btn-outline-primary rounded-3">聯絡我們</button>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <%- contents %>

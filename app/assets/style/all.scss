@@ -1,7 +1,10 @@
-//font
-
 // Vender
 @import "./vender/bootstrap";
 
 // Base
 @import './base/reboot';
+
+
+// Components
+@import './components/navbar';
+@import './components/button';
