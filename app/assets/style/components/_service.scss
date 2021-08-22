@@ -1,0 +1,60 @@
+.service {
+  &-body{
+    @include media-breakpoint-up(lg) {
+      min-height: 445px;
+    }
+  }
+  &-title {
+    font-size: 1.75rem;
+    font-weight: $font-weight-medium;
+    color: $primary;
+  }
+  &-text {
+    font-size: 1.25rem;
+    color: $secondary;
+  }
+  &-photo {
+    min-width: 100%;
+    height: 210px;
+    @include media-breakpoint-up(md) {
+      height: 117px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 207px;
+    }
+  }
+  &-photo-main {
+    @include media-breakpoint-up(md) {
+      height: 266px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 444px;
+    }
+  }
+
+  &-gallery {
+    @include media-breakpoint-up(lg) {
+      overflow-y: hidden;
+      overflow-x: auto;
+      height: 600px;
+      width: 100%;
+      position: absolute;
+    }
+    &-wrap {
+      @include media-breakpoint-up(lg) {
+        width: 2200px;
+        padding: 64px 0;
+      }
+    }
+    &-item {
+      width: 100%;
+      height: 165px;
+      @include media-breakpoint-up(md) {
+        height: 150px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 445px;
+      }
+    }
+  }
+}

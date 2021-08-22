@@ -1,6 +1,11 @@
 $utilities: map-merge(
   $utilities,
   (
+    "position": (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky
+    ),
     "width": (
       property: width,
       responsive: true,
@@ -64,6 +69,17 @@ $utilities: map-merge(
         medium: $font-weight-medium,
         bold: $font-weight-bold,
         bolder: $font-weight-bolder,
+      ),
+    ),
+    'object-fit': (
+      property: object-fit,
+      class: object,
+      values: (
+        contain,
+        cover,
+        fill,
+        none,
+        scale-down,
       ),
     ),
   )

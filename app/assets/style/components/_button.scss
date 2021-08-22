@@ -1,9 +1,10 @@
-.btn{
+.btn {
   color: $dark;
-  &-secondary,&-secondary:hover {
+  &-secondary,
+  &-secondary:hover {
     color: $white;
   }
-  &-outline-primary:hover{
+  &-outline-primary:hover {
     background: $primary;
     color: $white;
   }
