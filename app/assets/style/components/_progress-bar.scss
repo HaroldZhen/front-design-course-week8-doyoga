@@ -1,0 +1,15 @@
+.progressBar {
+  &-text {
+    padding: 0.75rem 0;
+    border-radius: 1rem;
+    color: $primary;
+    background-color: $light;
+  }
+  &-item.active > &-text {
+    background-color: $primary;
+    color: $white;
+  }
+  &-item + &-item {
+    // margin-left: 1rem;
+  }
+}
