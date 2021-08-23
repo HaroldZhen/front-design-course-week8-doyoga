@@ -25,8 +25,9 @@ $spacers: (
   10: $spacer * 2.5,       // 40px
   11: $spacer * 2.75,      // 44px
   12: $spacer * 3,         // 48px
-  'sm': $spacer * 0.625,  //10px
-  'md': $spacer * 1.875,   //30px
+  'xs': $spacer * 0.375,   // 6px
+  'sm': $spacer * 0.625,   // 10px
+  'md': $spacer * 1.875,   // 30px
 );
 
 // Typography

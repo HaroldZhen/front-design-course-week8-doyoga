@@ -6,6 +6,12 @@
   &-secondary:hover {
     color: $white;
   }
+  &-primary {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
   &-outline-primary {
     color: $primary;
     &:hover {

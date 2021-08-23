@@ -1,0 +1,6 @@
+.input-placeholder-fs-base {
+  &::placeholder {
+    color: $secondary;
+    font-size: $font-size-base;
+  }
+}

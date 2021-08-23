@@ -1,0 +1,267 @@
+---
+title: 立即預約-填寫資料
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation2
+---
+
+<main>
+  <section class="pt-12 pt-lg-10">
+    <div class="container text-center pt-md-5">
+      <h2 class="mb-6 fs-3 fw-normal text-primary">
+        立即預約
+      </h2>
+      <ul class="progressBar row gx-3 gx-md-md justify-content-center">
+        <li class="col-4 col-md-2 progressBar-item">
+          <p class="progressBar-text">選擇方案</p>
+        </li>
+        <li class="col-4 col-md-2 progressBar-item active">
+          <p class="progressBar-text">填寫資料</p>
+        </li>
+        <li class="col-4 col-md-2 progressBar-item">
+          <p class="progressBar-text">完成預約</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="py-10 py-lg-8 text-primary">
+    <div class="container">
+      <h3 class="text-secondary text-center fs-5 mb-6">
+        <span class="text-dark fs-6 me-4">您選擇的是</span>首次體驗課程-基礎
+      </h3>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <ul>
+            <li class="mb-8">
+              <p class="mb-4">1. 是否接觸過瑜珈?</p>
+              <div class="d-flex">
+                <div class="form-check me-8">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="isDoYogaBefore"
+                    id="isDoYogaBeforeTrue"
+                  />
+                  <label class="form-check-label" for="isDoYogaBeforeTrue">
+                    是
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="isDoYogaBefore"
+                    id="isDoYogaBeforeFalse"
+                    checked
+                  />
+                  <label class="form-check-label" for="isDoYogaBeforeFalse">
+                    否
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="mb-8">
+              <p class="mb-4">2. 想改善的生活問題?</p>
+              <div class="d-flex justify-content-between mb-4">
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq21"
+                    id="lowMd"
+                  />
+                  <label class="form-check-label" for="lowMd">
+                    肌耐力不足
+                  </label>
+                </div>
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq22"
+                    id="poorSoftness"
+                  />
+                  <label class="form-check-label" for="poorSoftness">
+                    柔軟度不佳
+                  </label>
+                </div>
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq23"
+                    id="highPressure"
+                  />
+                  <label class="form-check-label" for="highPressure">
+                    壓力大
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq24"
+                    id="incorrectPosture"
+                  />
+                  <label class="form-check-label" for="incorrectPosture">
+                    姿勢不正
+                  </label>
+                </div>
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq25"
+                    id="sleepNotGood"
+                  />
+                  <label class="form-check-label" for="sleepNotGood">
+                    睡眠品質差
+                  </label>
+                </div>
+                <div class="form-check ps-5 me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="rq26"
+                    id="adhd"
+                  />
+                  <label class="form-check-label" for="adhd">
+                    注意力不足
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="mb-8">
+              <p class="mb-4">3. 每週累積運動量約為多少？</p>
+              <div class="mb-4">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exerciseSum"
+                    id="exerciseSum4"
+                    value="150"
+                  />
+                  <label class="form-check-label" for="exerciseSum4"
+                    >150 分鐘以上</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exerciseSum"
+                    id="exerciseSum3"
+                    value="75"
+                  />
+                  <label class="form-check-label" for="exerciseSum3"
+                    >75~150 分鐘</label
+                  >
+                </div>
+              </div>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exerciseSum"
+                    id="exerciseSum2"
+                    value="30"
+                  />
+                  <label class="form-check-label" for="exerciseSum2"
+                    >30~75 分鐘</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exerciseSum"
+                    id="exerciseSum1"
+                    value="5"
+                  />
+                  <label class="form-check-label" for="exerciseSum1"
+                    >30 分鐘以下</label
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="mb-8">
+              <p class="mb-1">4. 上課預約報到日</p>
+              <p class="mb-2">
+                若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
+              </p>
+              <div class="w-50">
+                <input
+                  type="date"
+                  class="form-control text-primary"
+                  name="reservationDate"
+                  id="reservationDate"
+                />
+              </div>
+            </li>
+            <li class="mb-8">
+              <p class="mb-4">
+                5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+              </p>
+              <div class="row gx-2">
+                <div class="col-6 mb-4">
+                  <label for="name" class="form-label">姓名</label>
+                  <input
+                    type="text"
+                    class="form-control input-placeholder-fs-base py-xs px-3"
+                    placeholder="請輸入您的姓名"
+                    id="name"
+                  />
+                </div>
+                <div class="col-6 mb-4">
+                  <label for="age" class="form-label">年齡</label>
+                  <input
+                    type="text"
+                    class="form-control input-placeholder-fs-base py-xs px-3"
+                    placeholder="請輸入您的年齡"
+                    id="age"
+                  />
+                </div>
+                <div class="col-12 mb-4">
+                  <label for="gender" class="form-label">性別</label>
+                  <select
+                    id="gender"
+                    class="form-select input-placeholder-fs-base text-primary w-50 py-xs px-3"
+                  >
+                    <option selected disabled>請選擇</option>
+                    <option value="man">男</option>
+                    <option value="female">女</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-4">
+                  <label for="email" class="form-label">電子信箱</label>
+                  <input
+                    type="email"
+                    class="form-control input-placeholder-fs-base py-xs px-3"
+                    id="email"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div class="col-12 mb-8">
+                  <label for="phone" class="form-label">手機號碼</label>
+                  <input
+                    type="text"
+                    class="form-control input-placeholder-fs-base py-xs px-3"
+                    id="phone"
+                    placeholder="0912-345-678"
+                  />
+                </div>
+                <div class="col-12">
+                  <a href="#" class="btn btn-secondary w-100">送出</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
