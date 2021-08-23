@@ -82,5 +82,21 @@ $utilities: map-merge(
         scale-down,
       ),
     ),
+    "start": (
+      property: left,
+      class: start,
+      responsive: true,
+      values: $position-values
+    ),
+    "translate-middle": (
+      property: transform,
+      class: translate-middle,
+      responsive: true,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%),
+      )
+    ),
   )
 );

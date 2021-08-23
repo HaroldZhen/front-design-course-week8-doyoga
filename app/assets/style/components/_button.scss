@@ -1,5 +1,7 @@
 .btn {
   color: $dark;
+  font-size: $h5-font-size;
+  line-height: 1.35;
   &-secondary,
   &-secondary:hover {
     color: $white;

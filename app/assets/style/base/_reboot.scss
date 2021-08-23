@@ -1,19 +1,19 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
-  color: #707070 // $dark;
+  color: #707070; // $dark;
 }
 img {
   vertical-align: middle;
 }
 ol,
 ul,
-p  {
+p {
   margin-bottom: 0;
 }
 ol,
 ul,
-li{
+li {
   padding: 0;
   list-style: none;
 }
@@ -22,4 +22,13 @@ li{
 .material-icons,
 .material-icons-outlined {
   vertical-align: text-bottom;
+}
+.fab,
+.fas {
+  transform: translateY(2px);
+}
+.form-control::placeholder {
+  font-size: $h5-font-size;
+  color: $primary;
+  font-weight: $font-weight-light;
 }
