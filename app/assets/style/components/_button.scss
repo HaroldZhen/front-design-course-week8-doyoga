@@ -6,8 +6,11 @@
   &-secondary:hover {
     color: $white;
   }
-  &-outline-primary:hover {
-    background: $primary;
-    color: $white;
+  &-outline-primary {
+    color: $primary;
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
   }
 }
