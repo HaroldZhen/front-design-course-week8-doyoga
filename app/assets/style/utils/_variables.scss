@@ -5,6 +5,7 @@ $primary:   #907a7b;
 $secondary: #c0a4a5;
 $light:     #f5f0e7;
 $dark:      #707070;
+$white:     #fff;
 
 // Grid columns
 $grid-gutter-width: 1.875rem; //30px
@@ -77,3 +78,7 @@ $border-radius-lg:            1rem;
 
 // Links
 $link-decoration:   none;
+
+// Tables
+$table-color:                 $primary;
+$table-bg:                    $white;
