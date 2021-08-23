@@ -1,0 +1,35 @@
+.schedule {
+  &-container {
+    height: 670px;
+    overflow: hidden;
+  }
+  &-cover {
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 630px;
+  }
+  &-content {
+    min-width: 925px;
+  }
+  &-header,
+  &-body {
+    th,
+    td {
+      text-align: center;
+      white-space: nowrap;
+      &:nth-child(odd):not(:first-child) {
+        background-color: $light;
+        color: $primary;
+      }
+    }
+    th {
+      font-weight: $font-weight-normal;
+    }
+  }
+  &-body {
+    th {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+  }
+}

@@ -4,137 +4,111 @@ layout: ./app/layout.ejs
 engine: ejs
 current: contact
 ---
-
 <main>
   <section class="pt-12 pt-lg-10 mb-8 mb-md-8 mb-lg-12">
     <div
-      class="container pt-md-4 pt-lg-6 text-primary pb-lg-3 mb-lg-sm overflow-hidden"
-      style="height: 670px;"
+      class="schedule-container container pt-md-4 pt-lg-6 text-primary pb-lg-3 mb-lg-sm"
     >
       <h2 class="mb-6 mb-md-8 fs-3 fw-normal text-center">
         本月課表
       </h2>
       <div
-        class="col-md-12 col-lg-10 mx-lg-auto"
-        style="overflow-y:hidden; overflow-x: auto; height: 630px;"
+        class="schedule-cover col-md-12 col-lg-10 mx-lg-auto"
       >
-        <div class="rounded-3 bg-secondary py-10 px-12" style="width: 925px;">
+        <div class="schedule-content rounded-3 bg-secondary py-10 px-12">
           <h3 class="fs-5 text-white fw-normal">2021 07 月</h3>
-          <table class="table bg-white table-bordered text-primary">
+          <table class="table table-bordered bg-white text-primary">
             <thead>
-              <tr>
-                <th class="fw-normal px-1" scope="col">
-                  時間
-                </th>
-                <th class="fw-normal text-center" scope="col">
-                  星期一
-                </th>
-                <th
-                  class="fw-normal text-center table-light text-primary"
-                  scope="col"
-                >
-                  星期二
-                </th>
-                <th class="fw-normal text-center" scope="col">
-                  星期三
-                </th>
-                <th
-                  class="fw-normal text-center table-light text-primary"
-                  scope="col"
-                >
-                  星期四
-                </th>
-                <th class="fw-normal text-center" scope="col">
-                  星期五
-                </th>
-                <th
-                  class="fw-normal text-center table-light text-primary"
-                  scope="col"
-                >
-                  星期六
-                </th>
+              <tr class="schedule-header">
+                <th class="text-start px-1" scope="col">時間</th>
+                <th scope="col">星期一</th>
+                <th scope="col">星期二</th>
+                <th scope="col">星期三</th>
+                <th scope="col">星期四</th>
+                <th scope="col">星期五</th>
+                <th scope="col">星期六</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="schedule-body">
               <tr>
-                <th class="fw-normal px-1" scope="row">0900-1000</th>
+                <th scope="row">0900-1000</th>
                 <td>基礎 Basic</td>
-                <td class="table-light text-primary">基礎 Basic</td>
-                <td></td>
-                <td class="table-light text-primary"></td>
                 <td>基礎 Basic</td>
-                <td class="table-light text-primary">基礎 Basic</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1000-1100</th>
-                <td>艾揚格 Iyengar</td>
-                <td class="table-light text-primary">哈達 Hatha</td>
-                <td>寰宇 Universal</td>
-                <td class="table-light text-primary">哈達 Hatha</td>
-                <td>艾揚格 Iyengar</td>
-                <td class="table-light text-primary">雙人飛行</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1100-1200</th>
-                <td>寰宇 Universal</td>
-                <td class="table-light text-primary">陰陽 Yin Yang</td>
-                <td>艾揚格 Iyengar</td>
-                <td class="table-light text-primary">寰宇 Universal</td>
                 <td></td>
-                <td class="table-light text-primary">艾揚格 Iyengar</td>
+                <td></td>
+                <td>基礎 Basic</td>
+                <td>基礎 Basic</td>
               </tr>
               <tr>
-                <th class="fw-normal px-1" scope="row">1200-1400</th>
-                <td colspan="6" class="text-center">休息</td>
+                <th scope="row">1000-1100</th>
+                <td>艾揚格 Iyengar</td>
+                <td>哈達 Hatha</td>
+                <td>寰宇 Universal</td>
+                <td>哈達 Hatha</td>
+                <td>艾揚格 Iyengar</td>
+                <td>雙人飛行</td>
               </tr>
               <tr>
-                <th class="fw-normal px-1" scope="row">1400-1500</th>
-                <td>雙人飛行</td>
-                <td class="table-light text-primary">基礎 Basic</td>
-                <td>雙人飛行</td>
-                <td class="table-light text-primary">陰陽 Yin Yang</td>
-                <td>雙人飛行</td>
-                <td class="table-light text-primary">基礎 Basic</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1500-1600</th>
+                <th scope="row">1100-1200</th>
+                <td>寰宇 Universal</td>
                 <td>陰陽 Yin Yang</td>
-                <td class="table-light text-primary">陰陽 Yin Yang</td>
-                <td>基礎 Basic</td>
-                <td class="table-light text-primary">基礎 Basic</td>
-                <td>哈達 Hatha</td>
-                <td class="table-light text-primary">香氛瑜珈</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1600-1700</th>
-                <td>哈達 Hatha</td>
-                <td class="table-light text-primary">雙人飛行</td>
-                <td>陰陽 Yin Yang</td>
-                <td class="table-light text-primary">香氛瑜珈</td>
                 <td>艾揚格 Iyengar</td>
-                <td class="table-light text-primary">陰陽 Yin Yang</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1700-1800</th>
-                <td>艾揚格 Iyengar</td>
-                <td class="table-light text-primary"></td>
-                <td>哈達 Hatha</td>
-                <td class="table-light text-primary">艾揚格 Iyengar</td>
                 <td>寰宇 Universal</td>
-                <td class="table-light text-primary">哈達 Hatha</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">1800-2000</th>
-                <td colspan="6" class="text-center">休息</td>
-              </tr>
-              <tr>
-                <th class="fw-normal px-1" scope="row">2000-2100</th>
                 <td></td>
-                <td class="table-light text-primary"></td>
+                <td>艾揚格 Iyengar</td>
+              </tr>
+              <tr>
+                <th scope="row">1200-1400</th>
+                <td colspan="6">休息</td>
+              </tr>
+              <tr>
+                <th scope="row">1400-1500</th>
+                <td>雙人飛行</td>
+                <td>基礎 Basic</td>
+                <td>雙人飛行</td>
+                <td>陰陽 Yin Yang</td>
+                <td>雙人飛行</td>
+                <td>基礎 Basic</td>
+              </tr>
+              <tr>
+                <th scope="row">1500-1600</th>
+                <td>陰陽 Yin Yang</td>
+                <td>陰陽 Yin Yang</td>
+                <td>基礎 Basic</td>
+                <td>基礎 Basic</td>
+                <td>哈達 Hatha</td>
                 <td>香氛瑜珈</td>
-                <td class="table-light text-primary">艾揚格 Iyengar</td>
+              </tr>
+              <tr>
+                <th scope="row">1600-1700</th>
+                <td>哈達 Hatha</td>
+                <td>雙人飛行</td>
+                <td>陰陽 Yin Yang</td>
                 <td>香氛瑜珈</td>
-                <td class="table-light text-primary">雙人飛行</td>
+                <td>艾揚格 Iyengar</td>
+                <td>陰陽 Yin Yang</td>
+              </tr>
+              <tr>
+                <th scope="row">1700-1800</th>
+                <td>艾揚格 Iyengar</td>
+                <td></td>
+                <td>哈達 Hatha</td>
+                <td>艾揚格 Iyengar</td>
+                <td>寰宇 Universal</td>
+                <td>哈達 Hatha</td>
+              </tr>
+              <tr>
+                <th scope="row">1800-2000</th>
+                <td colspan="6">休息</td>
+              </tr>
+              <tr>
+                <th scope="row">2000-2100</th>
+                <td></td>
+                <td></td>
+                <td>香氛瑜珈</td>
+                <td>艾揚格 Iyengar</td>
+                <td>香氛瑜珈</td>
+                <td>雙人飛行</td>
               </tr>
             </tbody>
           </table>
