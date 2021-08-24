@@ -2,6 +2,9 @@
   &-container {
     width: 100%;
   }
+  &-wrapper {
+    max-height: 1200px;
+  }
   &-slide {
     width: 255px;
     @include media-breakpoint-up(md) {

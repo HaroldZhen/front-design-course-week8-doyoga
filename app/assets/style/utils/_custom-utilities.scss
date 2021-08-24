@@ -47,6 +47,7 @@ $utilities: map-merge(
       class: h-card,
       responsive: true,
       values: (
+        "xs": 165px,
         "sm": 196px,
         "1x": 210px,
         "2x": 216px,
@@ -84,6 +85,14 @@ $utilities: map-merge(
         medium: $font-weight-medium,
         bold: $font-weight-bold,
         bolder: $font-weight-bolder,
+      ),
+    ),
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      values: (
+        'modal': $zindex-modal,
+        'close-button': 1100,
       ),
     ),
     "object-fit": (

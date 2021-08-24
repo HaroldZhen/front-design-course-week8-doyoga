@@ -1,6 +1,6 @@
 console.log('Hello!');
 const swiper = new Swiper('.swiper-container', {
-  // loop: true,
+  loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
