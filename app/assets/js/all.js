@@ -1,6 +1,6 @@
 console.log('Hello!');
 const swiper = new Swiper('.swiper-container', {
-  loop: true,
+  // loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
@@ -12,3 +12,14 @@ const swiper = new Swiper('.swiper-container', {
   // },
   // direction: 'vertical',
 });
+isMobile();
+window.addEventListener('resize', isMobile);
+function isMobile(){
+  if (document.documentElement.clientWidth > 767) {
+    swiper.changeDirection('horizontal');
+  } else {
+    swiper.changeDirection('vertical');
+  }
+  // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
+  // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
+}
