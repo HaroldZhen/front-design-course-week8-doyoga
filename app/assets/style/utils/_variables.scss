@@ -56,6 +56,16 @@ $font-sizes: (
   xxl: $h6-font-size * 3     //48px
 );
 
+// Position
+$position-values: (
+  0: 0,
+  20: 20%,
+  25: 25%,
+  50: 50%,
+  100: 100%,
+  sm: 54px,
+);
+
 // Navbar
 $navbar-padding-y:                  1.125rem;
 $navbar-toggler-padding-y:          0;
@@ -82,3 +92,10 @@ $link-decoration:   none;
 // Tables
 $table-color:                 $primary;
 $table-bg:                    $white;
+
+// From
+// From
+$form-select-padding-y: 6px;
+$form-select-padding-x: 12px;
+$form-select-indicator-padding: $form-select-padding-x * 2.5;
+$form-select-bg-position: right $form-select-padding-y center;

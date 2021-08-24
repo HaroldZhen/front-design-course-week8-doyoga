@@ -4,3 +4,13 @@
     font-size: $font-size-base;
   }
 }
+.input-placeholder-secondary {
+  &::placeholder {
+    color: $secondary;
+  }
+}
+.input-placeholder-primary {
+  &::placeholder {
+    color: $primary;
+  }
+}

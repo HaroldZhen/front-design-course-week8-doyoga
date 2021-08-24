@@ -50,6 +50,7 @@ $utilities: map-merge(
         "sm": 196px,
         "1x": 210px,
         "2x": 216px,
+        "3x": 341px,
         "lg": 350px,
       ),
     ),
@@ -103,6 +104,7 @@ $utilities: map-merge(
         "start": left,
         "end": right,
         "center": center,
+        "bottom": bottom,
       ),
     ),
     "overflow": (

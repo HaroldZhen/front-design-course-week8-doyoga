@@ -11,6 +11,7 @@ https://haroldzhen.github.io/front-design-course-week8-goyoga/
 - [聯絡我們 contact](http://localhost:8080/contact.html)
 - [本月課表 curriculum](http://localhost:8080/curriculum.html)
 - [瑜珈空間 surroundings](http://localhost:8080/surroundings.html)
+- [課程介紹 course](http://localhost:8080/course.html)
 
 
 ### 主要練習
