@@ -23,6 +23,12 @@
       height: 196px;
     }
   }
+  &-slide-md-card {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 330px;
+    }
+  }
   &-avatar {
     width: 96px;
     height: 96px;

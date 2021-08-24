@@ -1,6 +1,6 @@
 console.log('Hello!');
 const swiper = new Swiper('.swiper-container', {
-  loop: true,
+  // loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
@@ -23,3 +23,13 @@ function isMobile(){
   // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
   // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
 }
+
+const swiper2 = new Swiper('.swiper-container-project', {
+  // loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
