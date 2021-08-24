@@ -4,7 +4,7 @@ $utilities: map-merge(
     "position": (
       property: position,
       responsive: true,
-      values: static relative absolute fixed sticky
+      values: static relative absolute fixed sticky,
     ),
     "width": (
       property: width,
@@ -42,6 +42,16 @@ $utilities: map-merge(
         auto: auto,
       ),
     ),
+    "height-card": (
+      property: height,
+      class: h-card,
+      responsive: true,
+      values: (
+        "1x": 210px,
+        "2x": 216px,
+        "lg": 350px,
+      ),
+    ),
     "font-size": (
       rfs: false,
       property: font-size,
@@ -54,12 +64,12 @@ $utilities: map-merge(
       responsive: true,
       property: background-position,
       values: (
-        'center': center,
-        'center-bottom': center bottom,
-        'center-top': center top,
-        'center-left': center left,
-        'center-right': center right,
-      )
+        "center": center,
+        "center-bottom": center bottom,
+        "center-top": center top,
+        "center-left": center left,
+        "center-right": center right,
+      ),
     ),
     "font-weight": (
       property: font-weight,
@@ -73,7 +83,7 @@ $utilities: map-merge(
         bolder: $font-weight-bolder,
       ),
     ),
-    'object-fit': (
+    "object-fit": (
       property: object-fit,
       class: object,
       values: (
@@ -82,6 +92,16 @@ $utilities: map-merge(
         fill,
         none,
         scale-down,
+      ),
+    ),
+    "object-position": (
+      property: object-position,
+      class: object-position,
+      responsive: true,
+      values: (
+        "start": left,
+        "end": right,
+        "center": center,
       ),
     ),
     "overflow": (
@@ -93,7 +113,7 @@ $utilities: map-merge(
       property: left,
       class: start,
       responsive: true,
-      values: $position-values
+      values: $position-values,
     ),
     "translate-middle": (
       property: transform,
@@ -103,7 +123,7 @@ $utilities: map-merge(
         null: translate(-50%, -50%),
         x: translateX(-50%),
         y: translateY(-50%),
-      )
+      ),
     ),
   )
 );

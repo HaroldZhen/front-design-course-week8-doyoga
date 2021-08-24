@@ -27,3 +27,28 @@
     height: 323px;
   }
 }
+.w-main {
+  min-height: calc(100vh - 82px - 133px - 210px);
+  @include media-breakpoint-up(md) {
+    min-height: calc(100vh - 82px - 159px - 194px);
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 80px - 109px - 194px);
+  }
+}
+
+// .h-card {
+//   &-xs {
+//   }
+//   &-sm {
+//   }
+//   &-md {
+//   }
+//   &-lg {
+//     height: 350px;
+//   }
+//   &-xl {
+//   }
+//   &-xxl {
+//   }
+// }
