@@ -1,0 +1,26 @@
+.swiper {
+  &-container {
+    width: 100%;
+  }
+  &-slide {
+    width: 255px;
+    @include media-breakpoint-up(md) {
+      width: 210px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 255px;
+    }
+  }
+  &-image{
+    height: 196px;
+    @include media-breakpoint-up(md) {
+      height: 161px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 196px;
+    }
+  }
+  &-pagination{
+    transform: translateY(15px);
+  }
+}
