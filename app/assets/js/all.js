@@ -12,12 +12,29 @@ const swiper = new Swiper('.swiper-container', {
   // },
   // direction: 'vertical',
 });
+const swiperTeacher = new Swiper('.swiper-container-teacher', {
+  // loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
+  // direction: 'vertical',
+});
 window.addEventListener('resize', isMobile);
 function isMobile(){
-  if (document.documentElement.clientWidth > 767) {
-    swiper.changeDirection('horizontal');
-  } else {
-    swiper.changeDirection('vertical');
+  try {
+    if (document.documentElement.clientWidth > 767) {
+      swiperTeacher.changeDirection('horizontal');
+    } else {
+      swiperTeacher.changeDirection('vertical');
+    }
+  } catch(e) {
+  console.log(e.toString());  
   }
   // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
   // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
@@ -45,11 +62,15 @@ const swiper2 = new Swiper('.swiper-container-project', {
 
 const swiper3 = new Swiper('.swiper-container-course', {
   // loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  slidesPerView: '4',
+  spaceBetween: 20,
+  breakpoints: {
+    // when window width is >= 1280px
+    769: {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    }
   },
   autoplay: {
     delay: 2000,

@@ -2,6 +2,9 @@
   &-container {
     width: 100%;
   }
+  &-container-course {
+    width: 110%;
+  }
   &-wrapper {
     max-height: 1200px;
   }
@@ -10,15 +13,6 @@
       max-height: 380px;
     }
   }
-  // &-slide {
-  //   width: 255px;
-  //   @include media-breakpoint-up(md) {
-  //     width: 210px;
-  //   }
-  //   @include media-breakpoint-up(lg) {
-  //     width: 255px;
-  //   }
-  // }
   &-image {
     height: 196px;
     @include media-breakpoint-up(md) {
@@ -33,14 +27,18 @@
       min-width: 1180px;
     }
   }
+  &-slide-lg-card {
+    width: 255px;
+    @include media-breakpoint-only(md) {
+      width: 210px;
+    }
+  }
   &-slide-xl-card {
-    width: 47%;
-    @include media-breakpoint-up(md) {
-      width: 150px;
-      height: 150px;
+    @media (max-width: 768px) {
+      width: 43% !important;
     }
     @include media-breakpoint-up(lg) {
-      width: 445px;
+      width: 445px !important;
     }
   }
   &-slide-md-card {
