@@ -33,3 +33,14 @@ const swiper2 = new Swiper('.swiper-container-project', {
     clickable: true,
   },
 });
+isMobile2();
+window.addEventListener('resize', isMobile2);
+function isMobile2(){
+  if (document.documentElement.clientWidth > 767) {
+    swiper2.changeDirection('horizontal');
+  } else {
+    swiper2.changeDirection('vertical');
+  }
+  // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
+  // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
+}

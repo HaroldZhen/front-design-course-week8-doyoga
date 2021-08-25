@@ -2,21 +2,18 @@
   color: $dark;
   font-size: $h5-font-size;
   line-height: 1.35;
+  &-primary,
+  &-primary:hover,
   &-secondary,
-  &-secondary:hover {
+  &-secondary:hover,
+  &-outline-primary:hover {
     color: $white;
   }
-  &-primary {
-    color: $white;
-    &:hover {
-      color: $white;
-    }
+  &-secondary:hover,
+  &-outline-primary:hover {
+    background: $primary;
   }
   &-outline-primary {
     color: $primary;
-    &:hover {
-      background: $primary;
-      color: $white;
-    }
   }
 }
