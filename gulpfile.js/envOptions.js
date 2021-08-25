@@ -31,6 +31,7 @@ let envOptions = {
     src: [
       `${srcPath}/assets/style/**/*.scss`,
       `${srcPath}/assets/style/**/*.sass`,
+      `${nodePath}/aos/dist/aos.css`,
     ],
     path: `${distPath}/assets/style`,
   },
@@ -45,6 +46,7 @@ let envOptions = {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`,
+      `${nodePath}/aos/dist/aos.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

@@ -1,4 +1,5 @@
 console.log('Hello!');
+AOS.init();
 const swiper = new Swiper('.swiper-container-recommend', {
   loop: true,
   slidesPerView: 'auto',
@@ -15,9 +16,9 @@ const swiperTeacher = new Swiper('.swiper-container-teacher', {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
+  autoplay: {
+    delay: 2000,
+  },
   // direction: 'vertical',
 });
 window.addEventListener('resize', isMobile);

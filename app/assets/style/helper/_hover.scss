@@ -11,3 +11,30 @@
     }
   }
 }
+
+.hover {
+  transition: all 0.3s linear;
+  &-translateY-sm {
+    &:hover,
+    &:focus {
+      transform: translateY(-16px);
+    }
+  }
+  &-bg-light {
+    &:hover,
+    &:focus {
+      background-color: $light;
+    }
+  }
+  &-text-cover {
+    .hover-text-cover-wrap {
+      opacity: 0;
+    }
+    &:hover,
+    &:focus {
+      .hover-text-cover-wrap {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -6,16 +6,6 @@
   }
 }
 
-.bg-feature {
-  height: 420px;
-  @include media-breakpoint-up(md) {
-    height: 252px;
-  }
-  @include media-breakpoint-up(lg) {
-    height: 420px;
-  }
-}
-
 .bg-cover {
   background-size: cover;
 }

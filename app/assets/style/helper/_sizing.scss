@@ -36,3 +36,12 @@
     min-height: calc(100vh - 80px - 109px - 194px);
   }
 }
+
+// height 
+// .bg-feature
+.h-feature {
+  height: 420px;
+  @include media-breakpoint-only(md) {
+    height: 252px;
+  }
+}
