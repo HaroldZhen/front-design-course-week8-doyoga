@@ -1,16 +1,11 @@
 console.log('Hello!');
-const swiper = new Swiper('.swiper-container', {
-  // loop: true,
+const swiper = new Swiper('.swiper-container-recommend', {
+  loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  autoplay: {
+    delay: 2000,
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
-  // direction: 'vertical',
 });
 const swiperTeacher = new Swiper('.swiper-container-teacher', {
   // loop: true,
@@ -65,7 +60,7 @@ const swiper3 = new Swiper('.swiper-container-course', {
   slidesPerView: '4',
   spaceBetween: 20,
   breakpoints: {
-    // when window width is >= 1280px
+    // when window width is >= 769px
     769: {
       loop: true,
       slidesPerView: 'auto',
@@ -90,8 +85,5 @@ const swiper4 = new Swiper('.swiper-container-testimonials', {
       slidesPerView: 2,
     }
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
   direction: 'horizontal',
 });

@@ -6,6 +6,7 @@ https://haroldzhen.github.io/front-design-course-week8-goyoga/
 ## 頁面：
 - [首頁 index](http://localhost:8080/)
 - [立即預約-選擇方案 reservation](http://localhost:8080/reservation.html)
+- [立即預約-完成預約 reservation -choose](http://localhost:8080/reservation-choose.html)
 - [立即預約-填寫資料 reservation2](http://localhost:8080/reservation2.html)
 - [立即預約-完成預約 reservation3](http://localhost:8080/reservation3.html)
 - [聯絡我們 contact](http://localhost:8080/contact.html)
