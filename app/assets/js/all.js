@@ -41,6 +41,17 @@ function isMobile2(){
   } else {
     swiper2.changeDirection('vertical');
   }
-  // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
-  // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
 }
+
+const swiper3 = new Swiper('.swiper-container-course', {
+  // loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+  },
+});

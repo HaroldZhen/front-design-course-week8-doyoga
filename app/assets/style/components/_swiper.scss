@@ -14,6 +14,17 @@
       width: 255px;
     }
   }
+  &-slide-xl-card {
+    width: 47%;
+    // height: 165px;
+    @include media-breakpoint-up(md) {
+      width: 150px;
+      height: 150px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 445px;
+    }
+  }
   &-image {
     height: 196px;
     @include media-breakpoint-up(md) {
