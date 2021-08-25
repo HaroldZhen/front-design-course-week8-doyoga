@@ -4,13 +4,18 @@
   line-height: 1.35;
   &-primary,
   &-primary:hover,
+  &-primary:focus,
   &-secondary,
   &-secondary:hover,
-  &-outline-primary:hover {
+  &-secondary:focus,
+  &-outline-primary:hover,
+  &-outline-primary:focus {
     color: $white;
   }
   &-secondary:hover,
-  &-outline-primary:hover {
+  &-secondary:focus,
+  &-outline-primary:hover,
+  &-outline-primary:focus {
     background: $primary;
   }
   &-outline-primary {

@@ -1,5 +1,5 @@
-console.log('Hello!');
 AOS.init();
+// surroundings 課程推薦
 const swiper = new Swiper('.swiper-container-recommend', {
   loop: true,
   slidesPerView: 'auto',
@@ -8,8 +8,8 @@ const swiper = new Swiper('.swiper-container-recommend', {
     delay: 2000,
   },
 });
+// course 師資介紹
 const swiperTeacher = new Swiper('.swiper-container-teacher', {
-  // loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
@@ -19,25 +19,22 @@ const swiperTeacher = new Swiper('.swiper-container-teacher', {
   autoplay: {
     delay: 2000,
   },
-  // direction: 'vertical',
 });
 window.addEventListener('resize', isMobile);
-function isMobile(){
+
+function isMobile() {
   try {
     if (document.documentElement.clientWidth > 767) {
       swiperTeacher.changeDirection('horizontal');
     } else {
       swiperTeacher.changeDirection('vertical');
     }
-  } catch(e) {
-  console.log(e.toString());  
+  } catch (e) {
+    console.log(e.toString());
   }
-  // console.log(`clientWidth: ${document.documentElement.clientWidth}`);
-  // console.log(`clientHeight: ${document.documentElement.clientHeight}`);
 }
-
+// reservation -choose 選擇課程階級
 const swiper2 = new Swiper('.swiper-container-project', {
-  // loop: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
   pagination: {
@@ -46,18 +43,8 @@ const swiper2 = new Swiper('.swiper-container-project', {
   },
   direction: 'horizontal',
 });
-// isMobile2();
-// window.addEventListener('resize', isMobile2);
-// function isMobile2(){
-//   if (document.documentElement.clientWidth > 768) {
-//     swiper2.changeDirection('horizontal');
-//   } else {
-//     swiper2.changeDirection('vertical');
-//   }
-// }
-
+// index 精心設計、課程多元
 const swiper3 = new Swiper('.swiper-container-course', {
-  // loop: true,
   slidesPerView: '4',
   spaceBetween: 20,
   breakpoints: {
@@ -72,7 +59,7 @@ const swiper3 = new Swiper('.swiper-container-course', {
     delay: 2000,
   },
 });
-
+// index 聽聽他們怎麼說
 const swiper4 = new Swiper('.swiper-container-testimonials', {
   slidesPerView: '1',
   spaceBetween: 30,

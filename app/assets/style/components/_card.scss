@@ -1,0 +1,19 @@
+.card {
+  &-choose {
+    border-width: 4px;
+    border-color: transparent;
+    transition: all .3s linear;
+    &.active {
+      border-color: $white;
+      .card-icon {
+        color: $white;
+      }
+    }
+    &:hover:not(&.active) {
+      border-color: rgba($white, 0.6);
+    }
+  }
+  &-icon {
+    color: rgba($white, 0.5);
+  }
+}
