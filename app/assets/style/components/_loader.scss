@@ -8,16 +8,16 @@
   width: 100%;
   height: 100vh;
   z-index: 2100;
-  animation: closeLoading 5s 1 ease-out forwards;
+  animation: closeLoading 4s 1 ease-out forwards;
   @keyframes closeLoading {
     0% {
       opacity: 1;
     }
     30% {
-      opacity: 0.85;
+      opacity: 0.7;
     }
     90% {
-      opacity: 0.6;
+      opacity: 0.5;
     }
     100% {
       opacity: 0;
