@@ -1,8 +1,12 @@
 "use strict";
 
 $(function () {
-  $(".loader-inner").loaders();
-  console.log($(".loader-inner"));
+  $(".loader").loaders();
+  $('body').css('overflow', 'hidden');
+  setTimeout(function () {
+    $('body').css('overflow', 'auto');
+    $(".loading").fadeOut(600);
+  }, 2500);
 });
 AOS.init();
 var elem = document.getElementById('reservationDate');
