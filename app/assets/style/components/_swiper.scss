@@ -34,10 +34,8 @@
     }
   }
   &-slide-xl-card {
-    @media (max-width: 768px) {
-      width: 43%!important;
-    }
-    @include media-breakpoint-up(lg) {
+    width: 43%!important;
+    @include media-breakpoint-up(xl) {
       width: 445px !important;
     }
   }
