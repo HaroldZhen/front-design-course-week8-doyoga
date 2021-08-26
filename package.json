@@ -37,6 +37,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.1",
+    "loaders.css": "^0.1.2",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.12.0",

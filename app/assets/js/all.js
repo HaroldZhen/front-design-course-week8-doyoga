@@ -1,5 +1,8 @@
+$(function () {
+  $(".loader-inner").loaders();
+  console.log($(".loader-inner"));
+});
 AOS.init();
-
 var elem = document.getElementById('reservationDate');
 if (!!elem) {
   new Datepicker(elem, {

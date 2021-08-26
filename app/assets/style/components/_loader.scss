@@ -1,0 +1,35 @@
+.loading {
+  background-color: rgba($secondary, 1.0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2100;
+  animation: closeLoading 5s 1 ease-out forwards;
+  @keyframes closeLoading {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.85;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  .ball-spin-fade-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%);
+    transform: scale(2);
+  }
+}
+
