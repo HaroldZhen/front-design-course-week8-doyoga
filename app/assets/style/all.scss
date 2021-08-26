@@ -4,19 +4,18 @@
 // Base
 @import './base/reboot';
 
-
 // Components
 @import './components/button';
-@import './components/service';
-@import './components/social-bar';
+@import './components/card';
 @import './components/progress-bar';
 @import './components/schedule';
+@import './components/social-bar';
 @import './components/swiper';
-@import './components/card';
 
 // Helper
-@import './helper/bg';
-@import './helper/sizing';
-@import './helper/spacer';
+@import './helper/helper';
 @import './helper/hover';
 @import './helper/input';
+
+// utils
+@import './utils/utilities';

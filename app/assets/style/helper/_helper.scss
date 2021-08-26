@@ -7,9 +7,18 @@
     }
   }
 }
+
 .h-square {
   height: 243px;
   @include media-breakpoint-only(md) {
     height: 238px;
+  }
+}
+
+.bg-hero {
+  height: 560px;
+  background: transparent;
+  @include media-breakpoint-up(md) {
+    height: 582px;
   }
 }
