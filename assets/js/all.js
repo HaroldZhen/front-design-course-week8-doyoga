@@ -68,7 +68,7 @@ var swiper3 = new Swiper('.swiper-container-course', {
   spaceBetween: 20,
   breakpoints: {
     // when window width is >= 769px
-    769: {
+    1200: {
       loop: true,
       slidesPerView: 'auto',
       spaceBetween: 30

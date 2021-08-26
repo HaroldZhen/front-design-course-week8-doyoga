@@ -11641,13 +11641,11 @@ main {
     .swiper-slide-lg-card {
       width: 210px; } }
 
-@media (max-width: 768px) {
-  .swiper-slide-xl-card {
-    width: 43% !important; } }
-
-@media (min-width: 992px) {
-  .swiper-slide-xl-card {
-    width: 445px !important; } }
+.swiper-slide-xl-card {
+  width: 43% !important; }
+  @media (min-width: 1200px) {
+    .swiper-slide-xl-card {
+      width: 445px !important; } }
 
 .swiper-slide-md-card {
   width: 100%; }
