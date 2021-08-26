@@ -112,6 +112,27 @@ function subscriptionMsg(e) {
   });
 }
 
+function issueMsg(e) {
+  e.preventDefault();
+  var issueNameInput = document.getElementById('issueNameInput');
+  var issueEmailInput = document.getElementById('issueEmailInput');
+  var issuePhoneInput = document.getElementById('issuePhoneInput');
+  var issueFeedbackInput = document.getElementById('issueFeedbackInput');
+  issueNameInput.value = '';
+  issueEmailInput.value = '';
+  issuePhoneInput.value = '';
+  issueFeedbackInput.value = '';
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: '感謝你的訊息',
+    text: '我們將盡快回覆你',
+    showConfirmButton: false,
+    showCloseButton: true,
+    timer: 1500
+  });
+}
+
 function searchMsg(e) {
   e.preventDefault();
   var searchInput = document.getElementById('searchInput');
