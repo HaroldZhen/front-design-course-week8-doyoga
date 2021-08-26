@@ -8,19 +8,18 @@
   width: 100%;
   height: 100vh;
   z-index: 2100;
-  .ball-spin-fade-loader {
+  .ball-spin-fade-loader,.ball-scale-multiple {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translateX(50%);
-    transform: scale(2);
+    transform: translateY(-50%) scale(3);
   }
 }
 .loader{
   &-icon {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translateY(-25%) translateX(-15%);
+    transform: translateY(100%) translateX(-50%);
   }
 }

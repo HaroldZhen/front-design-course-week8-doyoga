@@ -5,7 +5,7 @@ $(function () {
   setTimeout(function () {
     $('body').css('overflow', 'auto');
     $(".loading").fadeOut(600);
-  }, 2200);
+  }, 2800);
 });
 
 AOS.init();
