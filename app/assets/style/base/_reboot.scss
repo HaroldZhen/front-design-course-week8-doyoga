@@ -35,6 +35,9 @@ input:focus::placeholder {
   color: $secondary;
   font-weight: $font-weight-normal;
 }
+.overflow-hidden{
+  -webkit-mask-image: -webkit-radial-gradient(white, black); // Safari bug
+}
 main {
   min-height: calc(100vh - 82px - 133px - 210px);
   @include media-breakpoint-up(md) {
