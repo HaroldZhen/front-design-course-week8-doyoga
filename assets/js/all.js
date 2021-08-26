@@ -1,6 +1,14 @@
 "use strict";
 
-AOS.init(); // surroundings 課程推薦
+AOS.init();
+var elem = document.getElementById('reservationDate');
+
+if (!!elem) {
+  new Datepicker(elem, {
+    orientation: 'bottom'
+  });
+} // surroundings 課程推薦
+
 
 var swiper = new Swiper('.swiper-container-recommend', {
   loop: true,
@@ -78,6 +86,69 @@ var swiper4 = new Swiper('.swiper-container-testimonials', {
   },
   direction: 'horizontal'
 });
+"use strict";
+
+function socialAlert(e) {
+  e.preventDefault();
+  Swal.fire({
+    icon: 'info',
+    title: '即將開放' // text: '123',
+
+  });
+}
+
+function subscriptionMsg(e) {
+  e.preventDefault();
+  var suscriptionBtn = document.getElementById('btnSubscription');
+  suscriptionBtn.value = '';
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: '感謝你的訂閱',
+    text: '我們將定期寄送活動資訊給你',
+    showConfirmButton: false,
+    showCloseButton: true,
+    timer: 1500
+  });
+}
+
+function searchMsg(e) {
+  e.preventDefault();
+  var searchInput = document.getElementById('searchInput');
+  searchInput.value = '';
+  var timerInterval;
+  Swal.fire({
+    title: '搜尋中',
+    html: '還有 <b></b> 秒',
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: function didOpen() {
+      Swal.showLoading();
+      var b = Swal.getHtmlContainer().querySelector('b');
+      timerInterval = setInterval(function () {
+        b.textContent = Swal.getTimerLeft();
+      }, 100);
+    },
+    willClose: function willClose() {
+      clearInterval(timerInterval);
+    }
+  }).then(function (result) {
+    if (result.dismiss === Swal.DismissReason.timer) {
+      searchResult();
+    }
+  });
+}
+
+function searchResult() {
+  Swal.fire({
+    position: 'center',
+    icon: 'warning',
+    title: '沒有找到相關課程',
+    showConfirmButton: false,
+    showCloseButton: true,
+    timer: 1500
+  });
+}
 "use strict";
 
 (function (d) {

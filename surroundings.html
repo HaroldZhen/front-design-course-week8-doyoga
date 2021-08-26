@@ -9,8 +9,10 @@
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style/aos.css" />
+  <link rel="stylesheet" href="./assets/style/sweetalert2.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css" />
 </head>
 
@@ -18,7 +20,7 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-5">
       <div class="container">
-        <div class="d-block d-lg-flex w-100">
+        <div class="d-block d-lg-flex w-100 position-relative">
           <div class="d-flex justify-content-between align-items-center w-100 w-lg-auto">
             <a class="navbar-brand" href="./index.html">
               <img height="31" src="./assets/images/DOYOGA-logo.png" alt="logo">
@@ -33,13 +35,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center">
               <li class="nav-item px-2">
-                <a class="nav-link" href="./course.html">課程介紹</a>
+                <a class="nav-link false" href="./course.html">課程介紹</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link" href="./surroundings.html">瑜珈空間</a>
+                <a class="nav-link active fw-normal" href="./surroundings.html">瑜珈空間</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link" href="./curriculum.html">當月課表</a>
+                <a class="nav-link false" href="./curriculum.html">當月課表</a>
               </li>
           </div>
           <div class="d-none d-lg-block">
@@ -50,17 +52,6 @@
       </div>
     </nav>
   </header>
-  <div class="socialBar">
-    <ul class="socialBar-list">
-      <li class="mb-2"><a href="#" class="link-primary">
-        <i class="fab fa-facebook socialBar-icon"></i></a></li>
-      <li class="mb-2"><a href="#" class="link-primary">
-        <i class="fab fa-instagram socialBar-icon"></i></a></li>
-      <li class="mb-2"><a href="#" class="link-primary">
-        <i class="fab fa-line socialBar-icon"></i></a></li>
-    </ul>
-  </div>
-
   
 <main class="w-main">
   <section class="pt-12 pt-md-11 mb-10 mb-md-4">
@@ -77,7 +68,7 @@
               data-aos-easing="linear"
               data-aos-duration="600"
             >
-              <div class="card text-white border-0 card-hover-scale-1x">
+              <div class="card text-white border-0 wrap-hover-scale-1x">
                 <div class="rounded-3 overflow-hidden">
                   <img
                     src="./assets/images/surroundings-1.jpg"
@@ -101,7 +92,7 @@
               data-aos-easing="linear"
               data-aos-duration="600"
             >
-              <div class="card text-white border-0 card-hover-scale-1x">
+              <div class="card text-white border-0 wrap-hover-scale-1x">
                 <div class="rounded-3 overflow-hidden">
                   <img
                     src="./assets/images/locaction-1.jpg"
@@ -126,7 +117,7 @@
               data-aos-duration="600"
               data-aos-offset="150"
             >
-              <div class="card text-white border-0 card-hover-scale-1x">
+              <div class="card text-white border-0 wrap-hover-scale-1x">
                 <div class="rounded-3 overflow-hidden">
                   <img
                     src="./assets/images/surroundings-2.jpg"
@@ -150,7 +141,7 @@
               data-aos-easing="linear"
               data-aos-duration="600"
             >
-              <div class="card text-white border-0 card-hover-scale-1x">
+              <div class="card text-white border-0 wrap-hover-scale-1x">
                 <div class="rounded-3 overflow-hidden">
                   <img
                     src="./assets/images/locaction-3.jpg"
@@ -175,7 +166,7 @@
               data-aos-duration="600"
               data-aos-offset="150"
             >
-              <div class="card text-white border-0 card-hover-scale-1x">
+              <div class="card text-white border-0 wrap-hover-scale-1x">
                 <div class="rounded-3 overflow-hidden">
                   <img
                     src="./assets/images/surroundings-3.jpg"
@@ -195,7 +186,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div
+          class="col-md-4"
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="600"
+        >
           <div class="card border-0 rounded-3 bg-light text-primary">
             <div class="card-body p-8 p-md-4 p-lg-8">
               <h4 class="card-title mb-4 fs-5">DOYOGA 提供：</h4>
@@ -224,7 +220,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-light text-primary">
+  <section class="bg-light text-primary overflow-hidden">
     <div class="container pt-10 pt-md-8 pb-9 pb-md-10 pb-lg-11">
       <h3
         class="mb-6 mb-md-8 fs-3 fw-medium text-center"
@@ -353,20 +349,10 @@
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </div>
   </section>
 </main>
-
 
   <footer class="footer bg-primary text-white ">
     <div class="container py-6 py-md-8">
@@ -376,8 +362,8 @@
         </div>
         <div class="col-md-6 col-lg-4 ms-lg-auto">
           <div class="input-group">
-            <input type="text" class="form-control py-2 px-4" id="btnSubscription" placeholder="輸入您的電子信箱">
-            <button type="button" class="btn btn-secondary">訂閱</button>
+            <input type="text" class="form-control py-2 px-4 input-placeholder-primary input-placeholder-fs-5" id="btnSubscription" placeholder="輸入您的電子信箱">
+            <button type="button" onclick="subscriptionMsg(event)" class="btn btn-secondary">訂閱</button>
           </div>
         </div>
       </div>
@@ -388,26 +374,37 @@
         <div class="d-flex justify-content-between w-100">
           <div class="navbar-brand"><img src="./assets/images/DOYOGA.png" class="img-fluid" alt="sm-logo"></div>
           <ul class="d-flex">
-            <li class="ms-2"><a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
-            <li class="ms-2"><a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
-            <li class="ms-2"><a href="#" class="text-white"><i class="fab fa-line fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-line fa-lg"></i></a></li>
           </ul>
         </div>
         <ul class="navbar-nav mt-1">
           <li class="nav-item">
-            <a class="nav-link text-white py-1 px-0 " href="./course.html">課程介紹</a>
+            <a class="nav-link text-white py-1 px-0 hover-font-weight" href="./course.html">課程介紹</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white py-1 px-0" href="./surroundings.html">瑜珈空間</a>
+            <a class="nav-link text-white py-1 px-0 hover-font-weight" href="./surroundings.html">瑜珈空間</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white py-1 px-0 pb-md-0" href="./curriculum.html">當月課表</a>
+            <a class="nav-link text-white py-1 px-0 pb-md-0 hover-font-weight" href="./curriculum.html">當月課表</a>
           </li>
         </ul>
         <p class="position-relative position-md-absolute bottom-0 start-0 start-md-50 translate-middle-null translate-middle-md-x mt-1">© 2021. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
+  <div class="socialBar">
+  <ul class="socialBar-list">
+    <li class="mb-2"><a href="#" onclick="socialAlert(event)" class="link-primary">
+      <i class="fab fa-facebook socialBar-icon"></i></a></li>
+    <li class="mb-2"><a href="#" onclick="socialAlert(event)" class="link-primary">
+      <i class="fab fa-instagram socialBar-icon"></i></a></li>
+    <li class="mb-2"><a href="#" onclick="socialAlert(event)" class="link-primary">
+      <i class="fab fa-line socialBar-icon"></i></a></li>
+  </ul>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
