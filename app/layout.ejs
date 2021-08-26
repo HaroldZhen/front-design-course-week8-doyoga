@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style/aos.css" />
+  <link rel="stylesheet" href="./assets/style/sweetalert2.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css" />
 </head>
 
@@ -61,7 +62,7 @@
         <div class="col-md-6 col-lg-4 ms-lg-auto">
           <div class="input-group">
             <input type="text" class="form-control py-2 px-4 input-placeholder-primary input-placeholder-fs-5" id="btnSubscription" placeholder="輸入您的電子信箱">
-            <button type="button" class="btn btn-secondary">訂閱</button>
+            <button type="button" onclick="subscriptionMsg(event)" class="btn btn-secondary">訂閱</button>
           </div>
         </div>
       </div>
@@ -72,9 +73,9 @@
         <div class="d-flex justify-content-between w-100">
           <div class="navbar-brand"><img src="./assets/images/DOYOGA.png" class="img-fluid" alt="sm-logo"></div>
           <ul class="d-flex">
-            <li class="ms-3"><a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
-            <li class="ms-3"><a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
-            <li class="ms-3"><a href="#" class="text-white"><i class="fab fa-line fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="ms-3"><a href="#" onclick="socialAlert(event)" class="text-white"><i class="fab fa-line fa-lg"></i></a></li>
           </ul>
         </div>
         <ul class="navbar-nav mt-1">

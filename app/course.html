@@ -50,12 +50,14 @@ current: course
             <input
               type="text"
               class="form-control py-xs ps-3 pe-1 input-placeholder-fs-base input-placeholder-primary"
+              id="searchInput"
               placeholder="請輸入要搜尋的課程"
             />
             <button
               class="btn btn-primary py-xs px-3 fs-6"
               type="button"
-              id="button-addon2"
+              id="searchBtn"
+              onclick="searchMsg(event)"
             >
               搜尋
             </button>
