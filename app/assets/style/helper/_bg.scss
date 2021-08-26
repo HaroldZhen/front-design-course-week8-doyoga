@@ -1,6 +1,6 @@
 .bg-hero {
   height: 560px;
-  background-image: url("../images/hero.jpeg");
+  background: transparent;
   @include media-breakpoint-up(md) {
     height: 582px;
   }
