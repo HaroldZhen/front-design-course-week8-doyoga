@@ -11718,7 +11718,9 @@ main {
 .wrap-hover-scale-1x img {
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+  border-radius: 1rem;
+  overflow: hidden; }
 
 .wrap-hover-scale-1x:hover img, .wrap-hover-scale-1x:focus img {
   -webkit-transform: scale(1.2);
