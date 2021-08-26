@@ -11507,6 +11507,9 @@ input:focus::placeholder {
   color: #c0a4a5;
   font-weight: 300; }
 
+.overflow-hidden {
+  -webkit-mask-image: -webkit-radial-gradient(white, black); }
+
 main {
   min-height: calc(100vh - 82px - 133px - 210px); }
   @media (min-width: 768px) {
@@ -11718,9 +11721,7 @@ main {
 .wrap-hover-scale-1x img {
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  border-radius: 1rem;
-  overflow: hidden; }
+  transition: all 0.5s ease-in; }
 
 .wrap-hover-scale-1x:hover img, .wrap-hover-scale-1x:focus img {
   -webkit-transform: scale(1.2);
