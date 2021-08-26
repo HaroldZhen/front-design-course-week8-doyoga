@@ -7,7 +7,7 @@ $(function () {
   setTimeout(function () {
     $('body').css('overflow', 'auto');
     $(".loading").fadeOut(600);
-  }, 2800);
+  }, 1200);
 });
 AOS.init();
 var elem = document.getElementById('reservationDate');
