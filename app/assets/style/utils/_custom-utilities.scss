@@ -24,6 +24,7 @@ $utilities: map-merge(
         100: 100%,
         150: 150%,
         auto: auto,
+        'circle': 60px,
       ),
     ),
     "height": (
@@ -41,6 +42,13 @@ $utilities: map-merge(
         85: 85%,
         100: 100%,
         auto: auto,
+        "1x": 150px,
+        "2x": 165px,
+        "3x": 252px,
+        "4x": 323px,
+        "5x": 420px,
+        "lg": 445px,
+        "xl": 195px,
       ),
     ),
     "height-card": (
@@ -57,6 +65,14 @@ $utilities: map-merge(
         "xl": 418px,
         "xxl": 628px,
       ),
+    ),
+    "max-height": (
+      property: max-height,
+      class: mh,
+      values: (
+        100: 100%,
+        'content': 72px,
+      )
     ),
     "font-size": (
       rfs: false,

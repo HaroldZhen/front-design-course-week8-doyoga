@@ -24,10 +24,11 @@ current: reservation2
       </ul>
     </div>
   </section>
-  <section class="py-10 py-lg-8 text-primary">
+  <section class="py-10 py-lg-8">
     <div class="container">
       <h3 class="text-secondary text-center fs-5 mb-6">
-        <span class="text-dark fs-6 me-4">您選擇的是</span>首次體驗課程-基礎
+        <span class="text-dark fs-6 me-4 fw-normal">您選擇的是</span
+        >首次體驗課程-基礎
       </h3>
       <div class="row">
         <div class="col-md-6 col-lg-4 mx-auto">
@@ -41,6 +42,7 @@ current: reservation2
                     type="radio"
                     name="isDoYogaBefore"
                     id="isDoYogaBeforeTrue"
+                    checked
                   />
                   <label class="form-check-label" for="isDoYogaBeforeTrue">
                     是
@@ -52,7 +54,6 @@ current: reservation2
                     type="radio"
                     name="isDoYogaBefore"
                     id="isDoYogaBeforeFalse"
-                    checked
                   />
                   <label class="form-check-label" for="isDoYogaBeforeFalse">
                     否
@@ -143,6 +144,7 @@ current: reservation2
                     name="exerciseSum"
                     id="exerciseSum4"
                     value="150"
+                    checked
                   />
                   <label class="form-check-label" for="exerciseSum4"
                     >150 分鐘以上</label
@@ -190,20 +192,21 @@ current: reservation2
             </li>
             <li class="mb-8">
               <p class="mb-1">4. 上課預約報到日</p>
-              <p class="mb-2">
+              <p class="mb-2 fs-7">
                 若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
               </p>
               <div class="w-50">
                 <input
-                  type="date"
+                  type="text"
                   class="form-control text-primary"
                   name="reservationDate"
                   id="reservationDate"
+                  placeholder="MM/DD/YYYY"
                 />
               </div>
             </li>
-            <li class="mb-8">
-              <p class="mb-4">
+            <li class="mb-8 text-primary">
+              <p class="mb-4 text-dark">
                 5. 填寫基本資料，完成預約後會寄送通知至電子信箱
               </p>
               <div class="row gx-2">
@@ -255,7 +258,9 @@ current: reservation2
                   />
                 </div>
                 <div class="col-12">
-                  <a href="#" class="btn btn-secondary w-100">送出</a>
+                  <a href="./reservation3.html" class="btn btn-secondary w-100"
+                    >送出</a
+                  >
                 </div>
               </div>
             </li>

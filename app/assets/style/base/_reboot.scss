@@ -17,6 +17,9 @@ ul,
 li {
   list-style: none;
 }
+input:focus::placeholder {
+  opacity: 0;
+}
 .fab,
 .fas,
 .material-icons,
@@ -28,10 +31,16 @@ li {
   transform: translateY(2px);
 }
 .form-control::placeholder {
-  font-size: $h5-font-size;
-  color: $primary;
+  font-size: $font-size-base;
+  color: $secondary;
+  font-weight: $font-weight-normal;
 }
-input:focus::placeholder{
-  opacity: 0;
+main {
+  min-height: calc(100vh - 82px - 133px - 210px);
+  @include media-breakpoint-up(md) {
+    min-height: calc(100vh - 82px - 159px - 194px);
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 80px - 109px - 194px);
+  }
 }
-

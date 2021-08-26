@@ -1,4 +1,4 @@
-.card-hover {
+.wrap-hover {
   &-scale-1x {
     img {
       transition: all 0.5s ease-in;
@@ -10,14 +10,27 @@
       }
     }
   }
+  &-opacity {
+    .wrap-hover-opacity-container {
+      opacity: 0;
+    }
+    &:hover,
+    &:focus {
+      .wrap-hover-container {
+        opacity: 1;
+      }
+    }
+  }
 }
-
 .hover {
   transition: all 0.3s linear;
   &-translateY-sm {
     &:hover,
     &:focus {
-      transform: translateY(-16px);
+      transform: translateY(-0.5rem);
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-1rem);
+      }
     }
   }
   &-bg-light {
@@ -26,15 +39,7 @@
       background-color: $light;
     }
   }
-  &-text-cover {
-    .hover-text-cover-wrap {
-      opacity: 0;
-    }
-    &:hover,
-    &:focus {
-      .hover-text-cover-wrap {
-        opacity: 1;
-      }
-    }
+  &-font-weight {
+    font-weight: $font-weight-regular !important;
   }
 }

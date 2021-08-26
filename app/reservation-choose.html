@@ -23,12 +23,20 @@ current: reservation-choose
         </li>
       </ul>
       <ul class="row mt-4 mt-mb-0 mt-lg-8">
-        <li class="col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0">
+        <li
+          class="col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0"
+          data-aos="flip-right"
+          data-aos-duration="500"
+        >
           <div
             class="card rounded-3 border-4 border-secondary overflow-hidden d-flex flex-column flex-md-row flex-lg-column"
           >
-            <div class="ratio ratio-4x3 w-auto w-md-90 w-lg-auto">
-              <img src="./assets/images/project-1.jpg" alt="project-1" />
+            <div class="w-auto w-md-90 w-lg-auto">
+              <img
+                src="./assets/images/project-1.jpg"
+                class="w-100 h-square"
+                alt="首次體驗"
+              />
             </div>
             <div
               class="card-body p-6 text-primary flex-grow-1 d-flex flex-column justify-content-between"
@@ -42,7 +50,11 @@ current: reservation-choose
               >
                 分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
               </p>
-              <a href="#" class="btn btn btn-secondary w-100">選擇課程</a>
+              <a
+                href="./reservation-choose.html"
+                class="btn btn btn-secondary w-100"
+                >選擇課程</a
+              >
             </div>
           </div>
           <div class="text-center py-4">
@@ -51,12 +63,21 @@ current: reservation-choose
             </span>
           </div>
         </li>
-        <li class="d-none d-lg-block col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0">
+        <li
+          class="d-none d-lg-block col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0"
+          data-aos="flip-right"
+          data-aos-duration="1200"
+          data-aos-offset="150"
+        >
           <div
             class="card rounded-3 border-1 border-secondary overflow-hidden d-flex flex-column flex-md-row flex-lg-column"
           >
-            <div class="ratio ratio-4x3 w-auto w-md-90 w-lg-auto">
-              <img src="./assets/images/project-2.jpg" alt="project-2" />
+            <div class="w-auto w-md-90 w-lg-auto">
+              <img
+                src="./assets/images/project-2.jpg"
+                class="w-100 h-square"
+                alt="短期體驗"
+              />
             </div>
             <div
               class="card-body p-6 text-primary flex-grow-1 d-flex flex-column justify-content-between"
@@ -70,16 +91,25 @@ current: reservation-choose
               >
                 分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
               </p>
-              <a href="#" class="btn btn btn-secondary w-100">選擇課程</a>
+              <a
+                href="./reservation-choose.html"
+                class="btn btn btn-secondary w-100"
+                >選擇課程</a
+              >
             </div>
           </div>
         </li>
-        <li class="d-none d-lg-block col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0">
+        <li
+          class="d-none d-lg-block col-md-12 col-lg-4 mt-4 mt-mb-6 mt-lg-0"
+          data-aos="flip-right"
+          data-aos-duration="1800"
+          data-aos-offset="200"
+        >
           <div
             class="card rounded-3 border-1 border-secondary overflow-hidden d-flex flex-column flex-md-row flex-lg-column"
           >
-            <div class="ratio ratio-4x3 w-auto w-md-90 w-lg-auto">
-              <img src="./assets/images/project-3.jpg" alt="project-3" />
+            <div class="w-auto w-md-90 w-lg-auto">
+              <img src="./assets/images/project-3.jpg" class="w-100 h-square" alt="長期體驗" />
             </div>
             <div
               class="card-body p-6 text-primary flex-grow-1 d-flex flex-column justify-content-between"
@@ -93,7 +123,11 @@ current: reservation-choose
               >
                 分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
               </p>
-              <a href="#" class="btn btn btn-secondary w-100">選擇課程</a>
+              <a
+                href="./reservation-choose.html"
+                class="btn btn btn-secondary w-100"
+                >選擇課程</a
+              >
             </div>
           </div>
         </li>
@@ -103,12 +137,13 @@ current: reservation-choose
   <section>
     <div
       class="container bg-primary text-white pt-8 pb-6 pt-lg-10 pb-lg-11 overflow-hidden"
+      data-aos="zoom-out-up"
     >
       <h3 class="mb-6 mb-lg-8 text-center">選擇課程階級</h3>
       <div class="swiper-container-project pb-10 pb-lg-12 mb-lg-4">
         <!-- Additional required wrapper -->
         <div
-          class="swiper-wrapper justify-content-start justify-content-lg-center flex-column flex-md-row"
+          class="swiper-wrapper justify-content-start justify-content-xl-center flex-column flex-md-row"
         >
           <!-- Slides -->
           <div class="swiper-slide swiper-slide-md-card">
@@ -137,6 +172,7 @@ current: reservation-choose
               </div>
             </div>
           </div>
+          <!-- Slides -->
           <div class="swiper-slide swiper-slide-md-card">
             <div
               class="card card-choose bg-secondary rounded-3 shadow mb-4 mb-md-0"
@@ -165,10 +201,9 @@ current: reservation-choose
               </div>
             </div>
           </div>
+          <!-- Slides -->
           <div class="swiper-slide swiper-slide-md-card">
-            <div
-              class="card card-choose bg-secondary rounded-3 shadow"
-            >
+            <div class="card card-choose bg-secondary rounded-3 shadow">
               <div class="card-body p-lg-6">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title fs-3 lh-base mb-0">高階 Advanced</h5>
@@ -193,120 +228,46 @@ current: reservation-choose
           </div>
         </div>
       </div>
-      <!-- <div style="overflow: auto;">
-        <div class="d-flex flex-column flex-md-row justify-content-center pb-lg-5">
-          <div class="w-100 w-lg-30 mb-6 mb-md-0">
-            <div
-              class="card text-white bg-secondary border-white border border-4 border-white rounded-3 shadow"
-            >
-              <div class="card-body p-lg-6">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title fs-3 lh-base mb-0">基礎 Basic</h5>
-                  <span class="material-icons fs-lg text-white">
-                    check_circle_outline
-                  </span>
-                </div>
-                <p class="mb-4">
-                  基礎課程
-                  <span
-                    class="py-1 px-4 rounded-3 fw-light bg-primary ms-2 text-white fs-7"
-                    >60 min</span
-                  >
-                </p>
-                <ul class="d-grid gap-1">
-                  <li>・入體位法動作解說</li>
-                  <li>・瑜珈基礎動作、順位</li>
-                  <li>・適合任何階段練習者</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="w-100 w-lg-30 mb-6 mb-md-0 mx-md-md mx-lg-6">
-            <div
-              class="card text-white bg-secondary border border-4 border-secondary rounded-3 shadow"
-            >
-              <div class="card-body p-lg-6">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title fs-3 lh-base mb-0">中階 Intermediate</h5>
-                  <span class="material-icons fs-lg o-50">
-                    check_circle_outline
-                  </span>
-                </div>
-                <p class="mb-4">
-                  艾揚格、哈達、寰宇
-                  <span
-                    class="py-1 px-4 rounded-3 fw-light bg-primary ms-2 text-white fs-7"
-                    >60 min</span
-                  >
-                </p>
-                <ul class="d-grid gap-1">
-                  <li>・刺激身體七個層次為核心</li>
-                  <li>・結合流暢體位法練習、呼吸、觀想</li>
-                  <li>・適合半年以上練習者</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="w-100 w-lg-30 mb-6 mb-md-0">
-            <div
-              class="card text-white bg-secondary border border-4 border-secondary rounded-3 shadow"
-            >
-              <div class="card-body p-lg-6">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="card-title fs-3 lh-base mb-0">高階 Advanced</h5>
-                  <span class="material-icons fs-lg o-50">
-                    check_circle_outline
-                  </span>
-                </div>
-                <p class="mb-4">
-                  阿斯坦加、陰陽
-                  <span
-                    class="py-1 px-4 rounded-3 fw-light bg-primary ms-2 text-white fs-7"
-                    >60 min</span
-                  >
-                </p>
-                <ul class="d-grid gap-1">
-                  <li>・充分打開身體每個部位</li>
-                  <li>・顯著提升力量與柔軟度</li>
-                  <li>・適合一年以上練習者</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
   <section class="py-10 py-lg-8 text-primary">
     <div class="container">
-      <p class="mb-1 text-center">您選擇的是</p>
-      <h4 class="fs-5 fw-normal text-center mb-10">
-        <span class="border-bottom border-2 border-primary"
-          >首次體驗課程-基礎</span
-        >
-      </h4>
-      <h3 class="fw-normal text-center mb-4">預約須知</h3>
-      <div class="row mb-12 mb-md-10 mb-lg-12">
-        <div class="col-md-8 col-lg-5 mx-auto mb-lg-6">
-          <ol class="text-star lh-base px-md-2 px-lg-1">
-            <li>1.如果有特殊體質、特殊狀況，請主動告知。</li>
-            <li>
-              2.取消預約或時間異動請於預約日前一天晚間 21:00
-              前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。
-            </li>
-            <li>
-              3.為維護上課品質，請遵守 DOYOGA
-              各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。
-            </li>
-            <li>
-              4.DOYOGA
-              保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。
-            </li>
-          </ol>
-        </div>
-        <div class="col-12"></div>
-        <div class="col-md-4 mt-8 mx-auto">
-          <a href="#" class="btn btn-secondary w-100 mx-auto">繼續預約</a>
+      <div data-aos="zoom-in">
+        <p class="mb-1 text-center">您選擇的是</p>
+        <h4 class="fs-5 fw-normal text-center mb-10">
+          <span class="border-bottom border-2 border-secondary"
+            >首次體驗課程-基礎</span
+          >
+        </h4>
+      </div>
+      <div data-aos="zoom-in">
+        <h3 class="fw-normal text-center mb-4">預約須知</h3>
+        <div class="row mb-12 mb-md-10 mb-lg-12">
+          <div class="col-md-8 col-lg-5 mx-auto mb-lg-6">
+            <ol class="text-star lh-base px-md-2 px-lg-1">
+              <li>1.如果有特殊體質、特殊狀況，請主動告知。</li>
+              <li>
+                2.取消預約或時間異動請於預約日前一天晚間 21:00
+                前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。
+              </li>
+              <li>
+                3.為維護上課品質，請遵守 DOYOGA
+                各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。
+              </li>
+              <li>
+                4.DOYOGA
+                保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。
+              </li>
+            </ol>
+          </div>
+          <div class="col-12"></div>
+          <div class="col-md-4 mt-8 mx-auto">
+            <a
+              href="./reservation2.html"
+              class="btn btn-secondary w-100 mx-auto"
+              >繼續預約</a
+            >
+          </div>
         </div>
       </div>
     </div>

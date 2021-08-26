@@ -32,8 +32,6 @@ $spacers: (
 );
 
 // Typography
-$font-weight-medium: 500;
-
 $font-size-base:     1rem;
 
 $h1-font-size:   $font-size-base * 2.25;   //36px
@@ -56,6 +54,15 @@ $font-sizes: (
   xxl: $h6-font-size * 3     //48px
 );
 
+$font-weight-lighter:         200;
+$font-weight-light:           300;
+$font-weight-normal:          300;
+$font-weight-regular:         400;
+$font-weight-medium:          500;
+$font-weight-bold:            700;
+
+$font-weight-base:            $font-weight-regular;
+
 // Position
 $position-values: (
   0: 0,
@@ -67,6 +74,7 @@ $position-values: (
 );
 
 // Navbar
+$navbar-brand-height: 31px;
 $navbar-padding-y:                  1.125rem;
 $navbar-toggler-padding-y:          0;
 $navbar-toggler-padding-x:          0;
@@ -77,6 +85,8 @@ $navbar-light-disabled-color:       rgba($primary, .3);
 
 $navbar-brand-height: 31px;
 $navbar-brand-padding-y: 0;
+
+$nav-link-font-weight:       $font-weight-light;
 
 // Button
 $input-btn-padding-y:         0.5rem;
@@ -99,7 +109,11 @@ $modal-md:                    690px;
 $modal-lg:                    920px;
 
 // From
+//   select
 $form-select-padding-y: 6px;
 $form-select-padding-x: 12px;
 $form-select-indicator-padding: $form-select-padding-x * 2.5;
 $form-select-bg-position: right $form-select-padding-y center;
+//   check
+$form-check-input-checked-bg-color:       $secondary;
+$form-check-input-checked-border-color:   $secondary;

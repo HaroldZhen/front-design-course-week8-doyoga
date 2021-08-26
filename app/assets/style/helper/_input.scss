@@ -1,7 +1,9 @@
 .input-placeholder {
   &-fs-base::placeholder {
-    color: $secondary;
     font-size: $font-size-base;
+  }
+  &-fs-5::placeholder {
+    font-size: $h5-font-size;
   }
   &-primary::placeholder {
     color: $primary;

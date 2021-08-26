@@ -1,4 +1,12 @@
 AOS.init();
+
+var elem = document.getElementById('reservationDate');
+if (!!elem) {
+  new Datepicker(elem, {
+    orientation: 'bottom',
+  });
+}
+
 // surroundings 課程推薦
 const swiper = new Swiper('.swiper-container-recommend', {
   loop: true,
