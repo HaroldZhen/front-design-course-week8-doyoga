@@ -60,7 +60,7 @@ current: contact
               <input
                 type="text"
                 class="form-control py-md-xs px-md-3 input-placeholder-fs-base"
-                id="name"
+                id="issueNameInput"
                 placeholder="請輸入您的姓名"
               />
             </div>
@@ -69,7 +69,7 @@ current: contact
               <input
                 type="email"
                 class="form-control py-md-xs px-md-3 input-placeholder-fs-base"
-                id="name"
+                id="issueEmailInput"
                 placeholder="email@example.com"
               />
             </div>
@@ -78,7 +78,7 @@ current: contact
               <input
                 type="text"
                 class="form-control py-md-xs px-md-3 input-placeholder-fs-base"
-                id="name"
+                id="issuePhoneInput"
                 placeholder="0912-345-678"
               />
             </div>
@@ -86,12 +86,13 @@ current: contact
               <label for="feedback" class="form-label mb-2">意見回饋</label>
               <textarea
                 class="form-control h-50 py-md-xs px-md-3"
-                id="feedback"
+                id="issueFeedbackInput"
               ></textarea>
             </div>
             <div class="text-end">
               <a
                 href="#"
+                onclick="issueMsg(event)"
                 class="btn btn-secondary w-25 w-md-auto py-md-xs px-md-3 fs-6"
                 >送出</a
               >
