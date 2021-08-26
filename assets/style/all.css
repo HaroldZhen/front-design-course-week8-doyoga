@@ -11689,6 +11689,14 @@ main {
         -ms-transform: scale(2);
             transform: scale(2); }
 
+.loader-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-25%) translateX(-15%);
+      -ms-transform: translateY(-25%) translateX(-15%);
+          transform: translateY(-25%) translateX(-15%); }
+
 .w-avatar {
   width: 48px; }
   @media (min-width: 768px) {
