@@ -1,6 +1,6 @@
 # 第八週 - DOYOGA
 
-![DOYOGA]https://i.imgur.com/N04aSWx.jpg[/img]
+![DOYOGA](https://i.imgur.com/N04aSWx.jpg)
 ## 簡介
 瑜珈電商
 ## 頁面：
