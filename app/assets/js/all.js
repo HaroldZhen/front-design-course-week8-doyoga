@@ -1,10 +1,11 @@
 $(function () {
+  $(this).scrollTop(0);
   $(".loader").loaders();
   $('body').css('overflow', 'hidden');
   setTimeout(function () {
     $('body').css('overflow', 'auto');
     $(".loading").fadeOut(600);
-  }, 2500);
+  }, 2200);
 });
 
 AOS.init();
