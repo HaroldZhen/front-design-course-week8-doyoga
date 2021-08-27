@@ -12,7 +12,7 @@
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translateY(-50%) scale(3);
+    transform: translateY(-50%) scale(3.5);
   }
 }
 .loader{
@@ -20,6 +20,6 @@
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translateY(100%) translateX(-50%);
+    transform: translateY(130%) translateX(-50%);
   }
 }

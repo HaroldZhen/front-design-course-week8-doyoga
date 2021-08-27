@@ -1,5 +1,7 @@
 $(function () {
-  $(this).scrollTop(0);
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
   $(".loader").loaders();
   $('body').css('overflow', 'hidden');
   setTimeout(function () {
