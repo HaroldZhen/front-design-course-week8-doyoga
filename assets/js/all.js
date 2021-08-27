@@ -1,7 +1,9 @@
 "use strict";
 
-document.body.scrollTop = document.documentElement.scrollTop = 0;
 $(function () {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
   $(".loader").loaders();
   $('body').css('overflow', 'hidden');
   setTimeout(function () {
