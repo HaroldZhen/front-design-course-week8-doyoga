@@ -11685,13 +11685,13 @@ main {
     position: absolute;
     top: 35%;
     left: 50%;
-    -webkit-transform: translateY(-50%) scale(3);
-        -ms-transform: translateY(-50%) scale(3);
-            transform: translateY(-50%) scale(3); }
+    -webkit-transform: translateY(-50%) scale(3.5);
+        -ms-transform: translateY(-50%) scale(3.5);
+            transform: translateY(-50%) scale(3.5); }
 
 .loader-icon {
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 50%;
   -webkit-transform: translateY(100%) translateX(-50%);
       -ms-transform: translateY(100%) translateX(-50%);
