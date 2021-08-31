@@ -22,7 +22,8 @@
 + Bootstrap5 的 util 搭配自己手寫
 
 ### 相關套件
-- [Bootstrap5 v5.0.2](https://getbootstrap.com/)
+- [Bootstrap5 v5.1](https://getbootstrap.com/)
 - [Swiper v6.8.1](https://swiperjs.com/)
 - [Sweetalert2 v11](https://sweetalert2.github.io/)
+- [AOS.js 2.3.1](https://michalsnik.github.io/aos/)
 - Gulp v4.0.2
