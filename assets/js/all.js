@@ -97,6 +97,20 @@ var swiper4 = new Swiper('.swiper-container-testimonials', {
   },
   direction: 'horizontal'
 });
+var testimonialsLeft = document.querySelector('.js-testimonials-left');
+var testimonialsRight = document.querySelector('.js-testimonials-right');
+testimonialsLeft.addEventListener('click', function (e) {
+  e.preventDefault();
+  swiper4.slidePrev();
+  testimonialsLeft.classList.add('text-secondary');
+  testimonialsRight.classList.remove('text-secondary');
+});
+testimonialsRight.addEventListener('click', function (e) {
+  e.preventDefault();
+  swiper4.slideNext();
+  testimonialsRight.classList.add('text-secondary');
+  testimonialsLeft.classList.remove('text-secondary');
+});
 "use strict";
 
 function socialAlert(e) {
