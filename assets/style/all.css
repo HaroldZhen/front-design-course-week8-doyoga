@@ -11609,8 +11609,7 @@ main {
             align-items: center;
     color: #907a7b; }
   .socialBar-icon {
-    font-size: 2.75rem;
-    line-height: 1.2; }
+    font-size: 2.75rem; }
 
 .swiper-container {
   width: 100%; }
@@ -11751,6 +11750,21 @@ main {
     background-color: #f5f0e7; }
   .hover-font-weight {
     font-weight: 400 !important; }
+  .hover-underline {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#907a7b), to(#907a7b));
+    background-image: -o-linear-gradient(#907a7b, #907a7b);
+    background-image: linear-gradient(#907a7b, #907a7b);
+    background-position: left bottom;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    -webkit-transition: background-size 0.25s;
+    -o-transition: background-size 0.25s;
+    transition: background-size 0.25s; }
+    .hover-underline:hover, .hover-underline:active, .hover-underline:focus, .hover-underline.active {
+      background-size: 4.5rem 1px; }
+      @media (min-width: 992px) {
+        .hover-underline:hover, .hover-underline:active, .hover-underline:focus, .hover-underline.active {
+          background-size: 100% 1px; } }
 
 .input-placeholder-fs-base::-webkit-input-placeholder {
   font-size: 1rem; }
