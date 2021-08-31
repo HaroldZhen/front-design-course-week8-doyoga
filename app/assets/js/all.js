@@ -1,7 +1,7 @@
 $(function () {
   $('html, body').animate({
     scrollTop: 0
-  }, 1000);
+  }, 100);
   $(".loader").loaders();
   $('body').css('overflow', 'hidden');
   setTimeout(function () {
@@ -11,7 +11,7 @@ $(function () {
 });
 
 AOS.init();
-var elem = document.getElementById('reservationDate');
+const elem = document.getElementById('reservationDate');
 if (!!elem) {
   new Datepicker(elem, {
     orientation: 'bottom',
@@ -93,4 +93,18 @@ const swiper4 = new Swiper('.swiper-container-testimonials', {
     }
   },
   direction: 'horizontal',
+});
+const testimonialsLeft = document.querySelector('.js-testimonials-left');
+const testimonialsRight = document.querySelector('.js-testimonials-right');
+testimonialsLeft.addEventListener('click', function(e) {
+  e.preventDefault();
+  swiper4.slidePrev();
+  testimonialsLeft.classList.add('text-secondary');
+  testimonialsRight.classList.remove('text-secondary');
+});
+testimonialsRight.addEventListener('click', function(e) {
+  e.preventDefault();
+  swiper4.slideNext();
+  testimonialsRight.classList.add('text-secondary');
+  testimonialsLeft.classList.remove('text-secondary');
 });

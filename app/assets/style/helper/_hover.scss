@@ -42,4 +42,20 @@
   &-font-weight {
     font-weight: $font-weight-regular !important;
   }
+  &-underline {
+    background-image: linear-gradient($primary, $primary);
+    background-position: left bottom;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s;
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+      background-size: 4.5rem 1px;
+      @include media-breakpoint-up(lg) {
+        background-size: 100% 1px;
+      }
+    }
+  }
 }
